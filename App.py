@@ -6,36 +6,34 @@ class CadastroApp:
         self.root = root
         self.root.title("Cadastro de Funcionários")
 
-        # Lista para armazenar os funcionários
         self.lista_funcionarios = []
 
-        # Frame para o formulário de cadastro
         self.form_frame = tk.Frame(root)
         self.form_frame.pack(padx=10, pady=10)
 
-        # Campo Nome
+        #Nome
         self.label_nome = tk.Label(self.form_frame, text="Nome do Funcionário:")
         self.label_nome.grid(row=0, column=0, sticky=tk.W)
         self.entry_nome = tk.Entry(self.form_frame)
         self.entry_nome.grid(row=0, column=1)
 
-        # Campo Data de Recebimento
+        # Recebimento
         self.label_data_recebimento = tk.Label(self.form_frame, text="Dia de Recebimento:")
         self.label_data_recebimento.grid(row=1, column=0, sticky=tk.W)
         self.entry_data_recebimento = tk.Entry(self.form_frame)
         self.entry_data_recebimento.grid(row=1, column=1)
 
-        # Campo Salário
+        # Salário
         self.label_salario = tk.Label(self.form_frame, text="Valor do Salário:")
         self.label_salario.grid(row=2, column=0, sticky=tk.W)
         self.entry_salario = tk.Entry(self.form_frame)
         self.entry_salario.grid(row=2, column=1)
 
-        # Botão Cadastrar
+        # botão_cadastrar
         self.btn_cadastrar = tk.Button(self.form_frame, text="Cadastrar Funcionário", command=self.cadastrar_funcionario)
         self.btn_cadastrar.grid(row=3, column=0, columnspan=2, pady=10)
 
-        # Frame para a lista de funcionários
+        # lista_de_funcionários
         self.lista_frame = tk.Frame(root)
         self.lista_frame.pack(padx=10, pady=10)
 
