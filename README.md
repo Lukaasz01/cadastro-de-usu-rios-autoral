@@ -13,4 +13,3 @@ Este é um aplicativo web simples para **cadastro e busca de usuários** utiliza
 - **Python** (Flask, Pandas)
 - **HTML/CSS** (para templates)
 - **Bootstrap** (para estilização de tabelas)
-- 
